@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Page5">
+   <children>
+      <Label layoutX="72.0" layoutY="14.0" prefHeight="66.0" prefWidth="502.0" text="Display All Records">
+         <graphic>
+            <ImageView fitHeight="65.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/images/businessman-in-apresentation-with-a-graphic-on-a-board.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="14.0" layoutY="88.0" prefHeight="291.0" prefWidth="570.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="48.0" text="ID" />
+          <TableColumn fx:id="col_name" prefWidth="70.0" text="First Name" />
+            <TableColumn fx:id="col_lname" prefWidth="70.0" text="Last Name" />
+            <TableColumn fx:id="col_gname" prefWidth="79.0" text="G.Fath. Name" />
+            <TableColumn fx:id="col_sex" prefWidth="38.0" text="Sex" />
+            <TableColumn fx:id="col_pat" prefWidth="59.0" text="Pat. Type" />
+            <TableColumn fx:id="col_city" prefWidth="49.0" text="City" />
+            <TableColumn fx:id="col_scity" prefWidth="58.0" text="Sub City" />
+            <TableColumn fx:id="col_phno" prefWidth="62.0" text="Phone No." />
+            <TableColumn fx:id="col_age" prefWidth="36.0" text="Age" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
